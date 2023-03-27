@@ -1,7 +1,5 @@
-from Facility import Facility
-from Dormitory import Dormitory
-
-
+from facility import Facility
+from dormitory import Dormitory
 
 class DormitoryCatalog:
     def __init__(self):
@@ -29,7 +27,7 @@ class DormitoryCatalog:
         for dormitory in self.__Dormitory_listmain:
             if dormitory.search_fac(facility) == True:
                 self.add_dormitory(dormitory)
-            else :pass   
+            else :pass
         return self.__Dormitory_list
     def get_dormitory_listmain(self):
         return self.__Dormitory_listmain
