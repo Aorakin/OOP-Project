@@ -16,47 +16,47 @@ class Facility():
         self.__parking = parking
         self.__smoking = smoking
 
-    def get__pets(self):
+    def get_pets(self):
         return self.__pets
     
-    def get__ev_charger(self):
+    def get_ev_charger(self):
         return self.__ev_charger
     
-    def get__salon(self):
+    def get_salon(self):
         return self.__salon
     
-    def get__laudry (self):
+    def get_laudry (self):
         return self.__laudry
     
-    def get__store(self):
+    def get_store(self):
         return self.__store
     
-    def get__restaurant (self):
+    def get_restaurant (self):
         return self.__restaurant
     
-    def get__security (self):
+    def get_security (self):
         return self.__security
     
-    def get__cctv (self):
+    def get_cctv (self):
         return self.__cctv
     
-    def get__finger_print(self):
+    def get_finger_print(self):
         return self.__finger_print
     
-    def get__keycard (self):
+    def get_keycard (self):
         return self.__keycard
     
-    def get__fitness (self):
+    def get_fitness (self):
         return self.__fitness
     
-    def get__pool (self):
+    def get_pool (self):
         return self.__pool
     
-    def get__lift (self):
+    def get_lift (self):
         return self.__lift
     
-    def get__parking(self):
+    def get_parking(self):
         return self.__parking
     
-    def get__smoking(self):
+    def get_smoking(self):
         return self.__smoking
