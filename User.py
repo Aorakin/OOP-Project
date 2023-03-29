@@ -1,4 +1,4 @@
-import json
+from AccountList import AccountList
 
 class User:
     def __init__(self,name,lastname,email,user_name,password,user_phone):
@@ -22,20 +22,8 @@ class RegistrationSystem:
         user_name = input("Enter UserName")
         password = input("Enter password: ")
         user_phone = input("Enter phone number")
-        # Load the user info from a file
-        with open("instanceUser.json", "r") as file:
-            user_info = json.load(file)
-        # Add a new user to the dictionary
-        new_user = {
-            "name": name,
-            "last name": lastname,
-            "email": email,
-            "username": user_name,
-            "password": password,
-            "user_phone": user_phone
-        }
-        # Save the updated user info to a file
-        for i in range:
-            user_info[f"User{[i]}"] = new_user
-        with open("user_info.json", "w") as file:
-            json.dump(user_info, file, indent=4)
+
+        # Add a new user to the accountlist
+        account_list = AccountList()
+        new_user = User(name,lastname,email,user_name,password,user_phone)
+        account_list.add_account(new_user)
