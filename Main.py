@@ -2,7 +2,7 @@ from Facility import Facility
 from Dormitory import Dormitory
 from DormitoryCatalog import DormitoryCatalog
 from AccountList import AccountList
-from user import User
+from User import User
 
 jia_jia = Dormitory("jia_jia","soi hormai","","0828932414",8,18,100,False,"","","Arm")
 sabaiplace = Dormitory("sabaiplace","Vcon","","4905293028",8,18,9,"","",100,"ball")
@@ -28,8 +28,8 @@ Dorcat = DormitoryCatalog()
 Dorcat.add_dormitory_main(jia_jia)
 Dorcat.add_dormitory_main(sabaiplace)
 Dorcat.add_dormitory_main(boomboom_place)
-print(Dorcat.search_fac_dor("pets"))
-print(Dorcat.search_fac_dor("smoking"))
+# print(Dorcat.search_fac_dor("pets"))
+# print(Dorcat.search_fac_dor("smoking"))
 print(Dorcat.search_maxmin_price(4000,6600))
 
 account_list = AccountList()
@@ -41,4 +41,4 @@ account_list.add_account(arm)
 account_list.add_account(ball)
 account_list.add_account(oak)
 
-print(account_list.check_user("oakoak22","oak08293248"))
+#print(account_list.check_user("oakoak22","oak08293248"))
