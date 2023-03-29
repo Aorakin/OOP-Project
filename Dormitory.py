@@ -81,8 +81,3 @@ class Dormitory():
         search = Dormitory.get_facility(self)
         # search = "self.__Fac.get_" + facility + "()"
         return eval("search."+"get_"+facility+"()")
-
-    def search_name(self, dor_name):
-        search = Dormitory.get_facility(self)
-        # search = "self.__Fac.get_" + facility + "()"
-        return eval("search."+"get_"+facility+"()")
