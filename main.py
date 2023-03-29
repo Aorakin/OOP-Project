@@ -7,10 +7,11 @@ sabaiplace = Dormitory("sabaiplace","Vcon","","4905293028",8,18,9,"","",100,"bal
 boomboom_place = Dormitory("boomboom_place","soi yigyig","","0626250119",8,18,100,False,"","","Tren",0,1,1,1,1,1,1,1,1,1,1,1,1,1,0)
 
 
-
 Dorcat = DormitoryCatalog()
 Dorcat.add_dormitory_main(jia_jia)
 Dorcat.add_dormitory_main(sabaiplace)
 Dorcat.add_dormitory_main(boomboom_place)
-print(Dorcat.search_fac_dor("pets"))
-print(Dorcat.search_fac_dor("smoking"))
+print(Dorcat.search_dor_name("jia_jia"))
+print(Dorcat.search_dor_name("sabaiplace"))
+#print(Dorcat.search_dor_name("pet"))
+#print(Dorcat.search_dor_name("smoking"))
