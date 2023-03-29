@@ -1,4 +1,4 @@
-import _instanceUser
+import InstanceUser
 class User:
     def __init__(self,name,lastname,email,user_name,password,user_phone):
         self._name = name
@@ -23,18 +23,12 @@ class User:
     
 
 def create_user(user_list):
-    for key,value in _instanceUser.User_info.items() :
-        new_user = User(name=_instanceUser.User_info[key]["name"],
-                        lastname=_instanceUser.User_info[key]["last name"],
-                        email=_instanceUser.User_info[key]["email"],
-                        user_name=_instanceUser.User_info[key]["username"],
-                        password=_instanceUser.User_info[key]["password"],
-                        user_phone=_instanceUser.User_info[key]["user_phone"])
-        user_list.append(new_user)
-
-user_list = []
-
-create_user(user_list=user_list)
-
-for user in user_list:
-    print(user.get_name())
+    for key,value in InstanceUser.user_info.items() :
+        new_user = User(name=InstanceUser.user_info[key]["name"],
+                        lastname=InstanceUser.user_info[key]["last name"],
+                        email=InstanceUser.user_info[key]["email"],
+                        user_name=InstanceUser.user_info[key]["username"],
+                        password=InstanceUser.user_info[key]["password"],
+                        user_phone=InstanceUser.user_info[key]["user_phone"])
+        
+        user_list.append(new_user)#add new_user แต่ละตัวเข้า user_list

@@ -1,4 +1,4 @@
-from facility import Facility
+from Facility import Facility
 
 class Dormitory():
     def __init__(self,dor_name,address,detail,phone,electric,water,service_fee,internet,dormitory_picture,term_of_service,owner_name,

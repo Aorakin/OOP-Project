@@ -1,5 +1,5 @@
-from facility import Facility
-from dormitory import Dormitory
+from Facility import Facility
+from Dormitory import Dormitory
 
 class DormitoryCatalog:
     def __init__(self):
