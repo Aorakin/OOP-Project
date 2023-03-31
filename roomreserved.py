@@ -1,10 +1,9 @@
-class RoomReserved:
-    def __init__(self,date_reserved,end):
+from Room import Room
+
+class RoomReserved(Room):
+    def __init__(self,date_reserved,end,room_id,room_rental,room_status,room_fac ):
+        Room.__init__(self,room_id,room_rental,room_status,room_fac)
         self.__date_reserved = date_reserved
-        self.__end = end
-
-    def get_reservation(self):
-        pass
-
-    def create_reservarion(reserved):
+        self.__end  = end
+    def get_reservation():
         pass
