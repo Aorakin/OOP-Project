@@ -8,6 +8,7 @@ jia_jia = Dormitory("jia_jia","soi hormai","","0828932414",8,18,100,False,"","",
 sabaiplace = Dormitory("sabaiplace","Vcon","","4905293028",8,18,9,"","",100,"ball")
 boomboom_place = Dormitory("boomboom_place","soi yigyig","","0626250119",8,18,100,False,"","","Tren")
 jia_jia.add_facility(1,1,1,1,1,1,1,1,1,1,1,1,1,1,0)
+
 sabaiplace.add_facility(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
 boomboom_place.add_facility(0,1,1,1,1,1,1,1,1,1,1,1,1,1,0)
 jia_jia.add_roomlist(101,6500,1,"")
@@ -30,7 +31,7 @@ Dorcat.add_dormitory_main(sabaiplace)
 Dorcat.add_dormitory_main(boomboom_place)
 # print(Dorcat.search_fac_dor("pets"))
 # print(Dorcat.search_fac_dor("smoking"))
-print(Dorcat.search_maxmin_price(4000,6600))
+print(Dorcat.search_maxmin_price(0,100))
 
 account_list = AccountList()
 arm = User("arm","vor","vorarm23@gmail.com","armvor00","armmee999","0929349512")
